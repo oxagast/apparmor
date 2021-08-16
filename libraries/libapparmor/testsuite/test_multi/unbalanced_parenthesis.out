@@ -1,0 +1,15 @@
+START
+File: unbalanced_parenthesis.in
+Event type: AA_RECORD_DENIED
+Audit ID: 1562529588.082:3153
+Operation: open
+Mask: r
+Denied Mask: r
+fsuid: 1000
+ouid: 1000
+Profile: unbalanced_parenthesis
+Name: /dev/shm/test(me
+Command: cat
+PID: 888
+Epoch: 1562529588
+Audit subid: 3153

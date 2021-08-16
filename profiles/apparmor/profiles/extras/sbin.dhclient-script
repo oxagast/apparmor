@@ -1,0 +1,31 @@
+# Last Modified: Tue Jan 25 16:48:30 2011
+
+abi <abi/3.0>,
+
+include <tunables/global>
+
+# dhclient-script will call plugins from /etc/netconfig.d, so this
+# will need to be extended on a per-site basis.
+
+profile dhclient-script /{usr/,}sbin/dhclient-script {
+  include <abstractions/base>
+  include <abstractions/bash>
+  include <abstractions/consoles>
+
+  /{usr/,}bin/dash rix,
+  /{usr/,}bin/bash rix,
+  /{usr/,}bin/grep rix,
+  /{usr/,}bin/sleep rix,
+  /{usr/,}bin/touch rix,
+  /{usr/,}bin/run-parts rix,
+  /{usr/,}bin/logger rix,
+  /dev/.sysconfig/network/** r,
+  /etc/netconfig.d/* mrix,
+  /etc/sysconfig/network/** r,
+  /etc/dhcp/{**,} r,
+  /{usr/,}sbin/dhclient-script r,
+  /{usr/,}sbin/ip rix,
+  /{usr/,}sbin/resolvconf rPUx,
+
+  include if exists <local/sbin.dhclient-script>
+}

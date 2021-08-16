@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Canonical Ltd
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: apparmor@lists.ubuntu.com\n"
+"POT-Creation-Date: 2020-10-14 03:52-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../aa_features_abi.c:53
+#, c-format
+msgid ""
+"USAGE: %s [OPTIONS] <SOURCE> [OUTPUT OPTIONS]\n"
+"\n"
+"Output AppArmor feature abi from SOURCE to OUTPUT\n"
+"OPTIONS:\n"
+"  -d, --debug      show messages with debugging information\n"
+"  -v, --verbose    show messages with stats\n"
+"  -h, --help       display this help\n"
+"SOURCE:\n"
+"  -f F, --file=F   load features abi from file F\n"
+"  -x, --extract    extract features abi from the kernel\n"
+"OUTPUT OPTIONS:\n"
+"  --stdout         default, write features to stdout\n"
+"  -w F, --write=F  write features abi to the file F instead of stdout\n"
+"\n"
+msgstr ""
+
+#: ../aa_features_abi.c:73
+#, c-format
+msgid "%s: ERROR: "
+msgstr ""
+
+#: ../aa_features_abi.c:85
+#, c-format
+msgid "%s: DEBUG: "
+msgstr ""
+
+#: ../aa_features_abi.c:98
+msgid "\n"
+msgstr ""

@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Canonical Ltd
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: apparmor@lists.ubuntu.com\n"
+"POT-Creation-Date: 2020-10-14 03:52-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../aa_exec.c:50
+#, c-format
+msgid ""
+"USAGE: %s [OPTIONS] <prog> <args>\n"
+"\n"
+"Confine <prog> with the specified PROFILE.\n"
+"\n"
+"OPTIONS:\n"
+"  -p PROFILE, --profile=PROFILE\t\tPROFILE to confine <prog> with\n"
+"  -n NAMESPACE, --namespace=NAMESPACE\tNAMESPACE to confine <prog> in\n"
+"  -d, --debug\t\t\t\tshow messages with debugging information\n"
+"  -i, --immediate\t\t\tchange profile immediately instead of at exec\n"
+"  -v, --verbose\t\t\t\tshow messages with stats\n"
+"  -h, --help\t\t\t\tdisplay this help\n"
+"\n"
+msgstr ""
+
+#: ../aa_exec.c:65
+#, c-format
+msgid "[%ld] aa-exec: ERROR: "
+msgstr ""
+
+#: ../aa_exec.c:76
+#, c-format
+msgid "[%ld] aa-exec: DEBUG: "
+msgstr ""
+
+#: ../aa_exec.c:89
+#, c-format
+msgid "[%ld] "
+msgstr ""
+
+#: ../aa_exec.c:107
+#, c-format
+msgid "[%ld] exec"
+msgstr ""

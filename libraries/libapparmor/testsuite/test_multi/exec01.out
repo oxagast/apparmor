@@ -1,0 +1,16 @@
+START
+File: exec01.in
+Event type: AA_RECORD_ALLOWED
+Audit ID: 1556742889.059:3686
+Operation: exec
+Mask: x
+Denied Mask: x
+fsuid: 1000
+ouid: 0
+Profile: /home/cb/bin/hello.sh
+Name: /usr/bin/rm
+Command: hello.sh
+Name2: /home/cb/bin/hello.sh//null-/usr/bin/rm
+PID: 13108
+Epoch: 1556742889
+Audit subid: 3686

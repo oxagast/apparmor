@@ -1,0 +1,7 @@
+#
+#=DESCRIPTION includes testing - recursive include should not fail
+#=EXRESULT PASS
+#
+/does/not/exist {
+  #include <includes/recursive.include>
+}

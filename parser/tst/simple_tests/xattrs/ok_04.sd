@@ -1,0 +1,7 @@
+#
+#=Description key with '.' character
+#=EXRESULT PASS
+#
+/usr/bin/xattrs-test xattrs=(hello.world=foo) {
+  /foo r,
+}

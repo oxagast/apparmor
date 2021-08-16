@@ -1,0 +1,12 @@
+START
+File: testcase_changeprofile_02.in
+Event type: AA_RECORD_DENIED
+Audit ID: 1598805776.452:88586
+Operation: change_profile
+Profile: php-fpm
+Name: php-fpm//webapp
+Command: php-fpm
+Name2: php-fpm//webapp
+PID: 825
+Epoch: 1598805776
+Audit subid: 88586

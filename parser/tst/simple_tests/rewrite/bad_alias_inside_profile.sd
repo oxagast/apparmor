@@ -1,0 +1,6 @@
+#=DESCRIPTION alias definition inside a profile
+#=EXRESULT FAIL
+
+/bin/foo {
+  alias /tmp -> /var/tmp,
+}

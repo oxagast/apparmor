@@ -1,0 +1,1 @@
+type=AVC msg=audit(1562529588.082:3153): apparmor="DENIED" operation="open" profile="unbalanced_parenthesis" name="/dev/shm/test(me" pid=888 comm="cat" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000

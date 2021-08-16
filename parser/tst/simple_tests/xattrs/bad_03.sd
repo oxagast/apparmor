@@ -1,0 +1,7 @@
+#
+#=Description flags before xattrs
+#=EXRESULT FAIL
+#
+/usr/bin/xattrs-test flags=(complain) xattrs=(myvalue=foo) {
+  /foo r,
+}

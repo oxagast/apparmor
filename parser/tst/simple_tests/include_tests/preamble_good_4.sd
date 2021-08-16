@@ -1,0 +1,9 @@
+#=DESCRIPTION old includes - include if exists directory in preamble
+#=EXRESULT PASS
+
+#include if exists <includes-preamble>
+
+/bin/foo {
+  /usr/bin/ls r,
+  @{FOO}/some/other/thing r,
+}

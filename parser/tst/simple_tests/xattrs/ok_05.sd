@@ -1,0 +1,7 @@
+#
+#=Description multiple xattrs
+#=EXRESULT PASS
+#
+/usr/bin/xattrs-test xattrs=(hello.world=foo goodbye.word=bar) {
+  /foo r,
+}

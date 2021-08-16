@@ -1,0 +1,149 @@
+# ------------------------------------------------------------------
+#
+#    Copyright (C) 2002-2005 Novell/SUSE
+#    Copyright (C) 2010-2015 Canonical, Ltd.
+#
+#    This program is free software; you can redistribute it and/or
+#    modify it under the terms of version 2 of the GNU General Public 
+#    License published by the Free Software Foundation.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, contact Novell, Inc.
+# ------------------------------------------------------------------
+# Make.rules - common make targets and variables for building AppArmor
+#
+# NOTES:
+#   Before including this file in your Makefile, you should
+#   - define COMMONDIR (the location of the common/ directory)
+#   - define the default rule (usually 'all:'). (Note: you can redefine
+#     it later in your Makefile)
+
+.PHONY: common_Make.rules_is_a_bad_target
+common_Make.rules_is_a_bad_target:
+	@echo "*** default target in common/Make.rules hit - either you did something strange, or something is broken... ***"
+	exit 1
+
+DISTRIBUTION=AppArmor
+VERSION=$(shell cat $(COMMONDIR)/Version)
+
+# Convenience functions
+pathsearch = $(firstword $(wildcard $(addsuffix /$(1),$(subst :, ,$(PATH)))))
+map = $(foreach a,$(2),$(call $(1),$(a)))
+
+AWK:=$(shell which awk)
+ifndef AWK
+$(error awk utility required for build but not available)
+endif
+
+define nl
+
+endef
+
+REPO_VERSION_CMD=[ -x /usr/bin/git ] && /usr/bin/git describe --tags --long --abbrev=16 --match 'v*' 2> /dev/null || awk '{ print $2 }' common/.stamp_rev
+
+ifndef PYTHON_VERSIONS
+PYTHON_VERSIONS = $(call map, pathsearch, python3)
+endif
+
+ifndef PYTHON
+PYTHON = $(firstword ${PYTHON_VERSIONS})
+endif
+
+#Helper function to be used with $(call pyalldo, run_test_with_all.py)
+pyalldo=set -e; $(foreach py, $(PYTHON_VERSIONS), $(py) $(1);)
+
+# Common set of compiler warnings
+_EXTRA_WARNINGS = -Wall -Wsign-compare -Wmissing-field-initializers -Wformat -Wformat-security -Wunused-parameter -Wimplicit-fallthrough
+EXTRA_WARNINGS := $(shell for warning in ${_EXTRA_WARNINGS} ; do \
+			if ${CC} $${warning} -S -o /dev/null -xc /dev/null >/dev/null 2>&1; then \
+				echo "$${warning}"; \
+			else \
+				echo "***" >&2 ; \
+				echo "WARNING: unable to use $${warning} with ${CC}, dropping" >&2 ; \
+				echo "***" >&2 ; \
+			fi ; \
+		    done)
+
+.PHONY: version
+.SILENT: version
+version:
+	echo $(VERSION)
+
+.PHONY: repo_version
+.SILENT: repo_version
+repo_version:
+	echo $(shell $(value REPO_VERSION_CMD))
+
+.PHONY: pod_clean
+ifndef VERBOSE
+.SILENT: pod_clean
+endif
+pod_clean:
+	-rm -f ${MANPAGES} *.[0-9].gz ${HTMLMANPAGES} pod2htm*.tmp
+
+# =====================
+# manpages
+# =====================
+
+POD2MAN                         = /usr/bin/pod2man
+POD2HTML                        = /usr/bin/pod2html
+MANDIR                          = /usr/share/man
+DOCDIR                          = /usr/share/doc/${NAME}-${VERSION}
+
+# get list of directory numbers based on definition of MANPAGES variable
+MANDIRS=$(sort $(foreach dir, 1 2 3 4 5 6 7 8, $(patsubst %.${dir}, ${dir}, $(filter %.${dir}, ${MANPAGES}))))
+HTMLMANPAGES=$(foreach manpage, ${MANPAGES}, ${manpage}.html)
+
+.PHONY: install_manpages
+install_manpages: $(MANPAGES)
+	$(foreach dir, ${MANDIRS}, \
+	     install -d ${DESTDIR}/${MANDIR}/man${dir} ; \
+	     install -m 644 $(filter %.${dir}, ${MANPAGES}) ${DESTDIR}/${MANDIR}/man${dir}; \
+	)
+
+MAN_RELEASE="AppArmor ${VERSION}"
+
+%.1 %.2 %.3 %.4 %.5 %.6 %.7 %.8: %.pod
+	$(POD2MAN) $< --release=$(MAN_RELEASE) --center=AppArmor --stderr --section=$(subst .,,$(suffix $@)) > $@
+
+%.1.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+%.2.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+%.3.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+%.4.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+%.5.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+%.6.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+%.7.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+%.8.html: %.pod
+	$(POD2HTML) --header --css apparmor.css --infile=$< --outfile=$@
+
+A2PS_ARGS=-Ec -g --line-numbers=1
+ENSCRIPT_ARGS=-C -2jGr -f Courier6 -E
+%.c.ps: %.c
+	#a2ps ${A2PS_ARGS} $< -o $@
+	enscript ${ENSCRIPT_ARGS} -o $@ $<
+
+%.pm.ps: %.pm
+	enscript ${ENSCRIPT_ARGS} -o $@ $<
+
+.PHONY: check_pod_files
+check_pod_files:
+	LANG=C podchecker -warning -warning *.pod

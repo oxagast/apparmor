@@ -1,0 +1,1 @@
+type=AVC msg=audit(1564250674.378:1307): apparmor="DENIED" operation="exec" profile="/usr/bin/wireshark" name="/usr/lib64/wireshark/extcap/androiddump" pid=23247 comm="pool" requested_mask="x" denied_mask="x" fsuid=1000 ouid=0

@@ -1,0 +1,10 @@
+#
+#=Description hat profile with xattrs
+#=EXRESULT FAIL
+#
+/usr/bin/xattrs-test {
+  ^hat xattrs=(myvalue=foo) {
+    /foo r,
+  }
+  /foo w,
+}

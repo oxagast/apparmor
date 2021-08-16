@@ -1,0 +1,18 @@
+START
+File: testcase_dbus_09.in
+Event type: AA_RECORD_ALLOWED
+Audit ID: 1561053426.749:186
+Operation: dbus_method_call
+Denied Mask: send
+Profile: /tmp/apparmor-2.8.0/tests/regression/apparmor/dbus_service
+Peer profile: unconfined
+Name: org.freedesktop.systemd1
+Command: /usr/bin/dbus-daemon
+PID: 20596
+Peer PID: 1
+DBus bus: system
+DBus path: /org/freedesktop/systemd1
+DBus interface: org.freedesktop.systemd1.Manager
+DBus member: LookupDynamicUserByName
+Epoch: 1561053426
+Audit subid: 186

@@ -1,0 +1,72 @@
+# Romanian translation for apparmor
+# Copyright (c) 2020 Rosetta Contributors and Canonical Ltd 2020
+# This file is distributed under the same license as the apparmor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: apparmor\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-11-28 10:23-0800\n"
+"PO-Revision-Date: 2020-02-20 21:47+0000\n"
+"Last-Translator: Daniel Slavu <Unknown>\n"
+"Language-Team: Romanian <ro@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2020-02-21 05:39+0000\n"
+"X-Generator: Launchpad (build 19413b719a8df7423ab1390528edadce9e0e4aca)\n"
+
+#: ../aa_enabled.c:26
+#, c-format
+msgid ""
+"%s: [options]\n"
+"  options:\n"
+"  -q | --quiet        Don't print out any messages\n"
+"  -h | --help         Print help\n"
+msgstr ""
+"%s: [opțiuni]\n"
+"  opțiuni:\n"
+"  -q | --calm Nu imprima niciun mesaj\n"
+"  -h | - ajutor Imprimare ajutor\n"
+
+#: ../aa_enabled.c:45
+#, c-format
+msgid "unknown or incompatible options\n"
+msgstr "opțiuni necunoscute sau incompatibile\n"
+
+#: ../aa_enabled.c:55
+#, c-format
+msgid "unknown option '%s'\n"
+msgstr "opțiune necunoscută '%s'\n"
+
+#: ../aa_enabled.c:64
+#, c-format
+msgid "Yes\n"
+msgstr "Da\n"
+
+#: ../aa_enabled.c:71
+#, c-format
+msgid "No - not available on this system.\n"
+msgstr "Nu - nu este disponibil pe acest sistem.\n"
+
+#: ../aa_enabled.c:74
+#, c-format
+msgid "No - disabled at boot.\n"
+msgstr "Nu - dezactivat la pornire.\n"
+
+#: ../aa_enabled.c:77
+#, c-format
+msgid "Maybe - policy interface not available.\n"
+msgstr "Poate - interfața politică nu este disponibilă.\n"
+
+#: ../aa_enabled.c:81
+#, c-format
+msgid "Maybe - insufficient permissions to determine availability.\n"
+msgstr ""
+"Poate - permisiuni insuficiente pentru a determina disponibilitatea.\n"
+
+#: ../aa_enabled.c:84
+#, c-format
+msgid "Error - '%s'\n"
+msgstr "Eroare - '%s'\n"

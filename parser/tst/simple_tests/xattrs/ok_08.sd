@@ -1,0 +1,8 @@
+#
+#=Description named profile without path
+#=EXRESULT PASS
+#
+
+profile xattrs-test xattrs=(user.foo="bar") {
+  /foo r,
+}

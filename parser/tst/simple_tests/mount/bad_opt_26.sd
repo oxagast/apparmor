@@ -1,0 +1,6 @@
+#
+#=Description basic rule not allow unparen'ed options
+#=EXRESULT FAIL
+/usr/bin/foo {
+  mount options in ro,noexec /dev -> /mnt,
+}

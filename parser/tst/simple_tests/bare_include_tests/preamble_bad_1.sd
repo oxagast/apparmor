@@ -1,0 +1,8 @@
+#=DESCRIPTION old includes - non-existent keyword include in preamble
+#=EXRESULT FAIL
+
+include <includes-preamble/does-not-exist>
+
+/bin/foo {
+  /usr/some/other/thing r,
+}

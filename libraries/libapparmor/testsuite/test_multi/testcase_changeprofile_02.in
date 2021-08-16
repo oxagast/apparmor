@@ -1,0 +1,1 @@
+type=AVC msg=audit(1598805776.452:88586): apparmor="DENIED" operation="change_profile" profile="php-fpm" name="php-fpm//webapp" pid=825 comm="php-fpm" target="php-fpm//webapp"

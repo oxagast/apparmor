@@ -1,0 +1,7 @@
+#
+#=Description no xattrs value
+#=EXRESULT PASS
+#
+/usr/bin/xattrs-test xattrs=(myvalue) {
+  /foo r,
+}

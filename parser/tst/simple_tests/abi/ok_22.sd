@@ -1,0 +1,10 @@
+#
+#=DESCRIPTION abi testing - abi path in profile
+#=EXRESULT PASS
+#
+
+
+/does/not/exist {
+  abi simple_tests/includes/abi/4.19,
+
+}

@@ -1,0 +1,7 @@
+#
+#=Description wrong conditional group
+#=EXRESULT FAIL
+#
+/usr/bin/xattrs-test peer=(myvalue=foo) {
+  /foo r,
+}

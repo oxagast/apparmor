@@ -1,0 +1,27 @@
+# ------------------------------------------------------------------
+#
+#    Copyright (C) 2020 SUSE LLC
+#
+#    This program is free software; you can redistribute it and/or
+#    modify it under the terms of version 2 of the GNU General Public
+#    License published by the Free Software Foundation.
+#
+# ------------------------------------------------------------------
+# vim: ft=apparmor
+
+include <tunables/global>
+
+profile dovecot-director /usr/lib/dovecot/director flags=(attach_disconnected) {
+  include <abstractions/base>
+  include <abstractions/dovecot-common>
+  include <abstractions/nameservice>
+
+  capability setuid,
+  capability sys_chroot,
+
+  /run/dovecot/login/proxy-notify rw,
+  /usr/lib/dovecot/director mr,
+
+  # Site-specific additions and overrides. See local/README for details.
+  include if exists <local/usr.lib.dovecot.director>
+}

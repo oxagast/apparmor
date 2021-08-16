@@ -1,0 +1,9 @@
+#=DESCRIPTION old includes - keyword include directory in preamble
+#=EXRESULT PASS
+
+include <includes-preamble>
+
+/bin/foo {
+  /usr/bin/ls r,
+  @{FOO}/some/other/thing r,
+}

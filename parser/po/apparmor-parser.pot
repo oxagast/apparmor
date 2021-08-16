@@ -1,0 +1,979 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Canonical Ltd
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: apparmor@lists.ubuntu.com\n"
+"POT-Creation-Date: 2020-10-14 03:51-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../parser_include.c:113 ../parser_include.c:111 ../parser_include.c:96
+msgid "Error: Out of memory.\n"
+msgstr ""
+
+#: ../parser_include.c:123 ../parser_include.c:121 ../parser_include.c:106
+#, c-format
+msgid "Error: basedir %s is not a directory, skipping.\n"
+msgstr ""
+
+#: ../parser_include.c:137 ../parser_include.c:122
+#, c-format
+msgid "Error: Could not add directory %s to search path.\n"
+msgstr ""
+
+#: ../parser_include.c:147 ../parser_include.c:151 ../parser_include.c:136
+msgid "Error: Could not allocate memory.\n"
+msgstr ""
+
+#: ../parser_interface.c:69 ../parser_interface.c:72 ../parser_interface.c:49
+#: ../parser_interface.c:52
+msgid "Bad write position\n"
+msgstr ""
+
+#: ../parser_interface.c:72 ../parser_interface.c:75 ../parser_interface.c:52
+#: ../parser_interface.c:55
+msgid "Permission denied\n"
+msgstr ""
+
+#: ../parser_interface.c:75 ../parser_interface.c:78 ../parser_interface.c:55
+#: ../parser_interface.c:58
+msgid "Out of memory\n"
+msgstr ""
+
+#: ../parser_interface.c:78 ../parser_interface.c:81 ../parser_interface.c:58
+#: ../parser_interface.c:61
+msgid "Couldn't copy profile: Bad memory address\n"
+msgstr ""
+
+#: ../parser_interface.c:81 ../parser_interface.c:84 ../parser_interface.c:61
+#: ../parser_interface.c:64
+msgid "Profile doesn't conform to protocol\n"
+msgstr ""
+
+#: ../parser_interface.c:84 ../parser_interface.c:87 ../parser_interface.c:64
+#: ../parser_interface.c:67
+msgid "Profile does not match signature\n"
+msgstr ""
+
+#: ../parser_interface.c:87 ../parser_interface.c:90 ../parser_interface.c:67
+#: ../parser_interface.c:70
+msgid "Profile version not supported by Apparmor module\n"
+msgstr ""
+
+#: ../parser_interface.c:90 ../parser_interface.c:93 ../parser_interface.c:70
+#: ../parser_interface.c:73
+msgid "Profile already exists\n"
+msgstr ""
+
+#: ../parser_interface.c:93 ../parser_interface.c:96 ../parser_interface.c:73
+#: ../parser_interface.c:76
+msgid "Profile doesn't exist\n"
+msgstr ""
+
+#: ../parser_interface.c:96 ../parser_interface.c:99 ../parser_interface.c:76
+#: ../parser_interface.c:79
+msgid "Permission denied; attempted to load a profile while confined?\n"
+msgstr ""
+
+#: ../parser_interface.c:99 ../parser_interface.c:102 ../parser_interface.c:79
+#: ../parser_interface.c:82
+#, c-format
+msgid "Unknown error (%d): %s\n"
+msgstr ""
+
+#: ../parser_interface.c:116 ../parser_interface.c:119 ../parser_interface.c:96
+#: ../parser_interface.c:100
+#, c-format
+msgid "%s: Unable to add \"%s\".  "
+msgstr ""
+
+#: ../parser_interface.c:121 ../parser_interface.c:124
+#: ../parser_interface.c:101 ../parser_interface.c:105
+#, c-format
+msgid "%s: Unable to replace \"%s\".  "
+msgstr ""
+
+#: ../parser_interface.c:126 ../parser_interface.c:129
+#: ../parser_interface.c:106 ../parser_interface.c:110
+#, c-format
+msgid "%s: Unable to remove \"%s\".  "
+msgstr ""
+
+#: ../parser_interface.c:131 ../parser_interface.c:134
+#: ../parser_interface.c:111 ../parser_interface.c:115
+#, c-format
+msgid "%s: Unable to write to stdout\n"
+msgstr ""
+
+#: ../parser_interface.c:135 ../parser_interface.c:138
+#: ../parser_interface.c:115 ../parser_interface.c:119
+#, c-format
+msgid "%s: Unable to write to output file\n"
+msgstr ""
+
+#: ../parser_interface.c:138 ../parser_interface.c:162
+#: ../parser_interface.c:141 ../parser_interface.c:165
+#: ../parser_interface.c:118 ../parser_interface.c:142
+#: ../parser_interface.c:123 ../parser_interface.c:147
+#, c-format
+msgid "%s: ASSERT: Invalid option: %d\n"
+msgstr ""
+
+#: ../parser_interface.c:147 ../parser_interface.c:150
+#: ../parser_interface.c:127 ../parser_interface.c:132
+#, c-format
+msgid "Addition succeeded for \"%s\".\n"
+msgstr ""
+
+#: ../parser_interface.c:151 ../parser_interface.c:154
+#: ../parser_interface.c:131 ../parser_interface.c:136
+#, c-format
+msgid "Replacement succeeded for \"%s\".\n"
+msgstr ""
+
+#: ../parser_interface.c:155 ../parser_interface.c:158
+#: ../parser_interface.c:135 ../parser_interface.c:140
+#, c-format
+msgid "Removal succeeded for \"%s\".\n"
+msgstr ""
+
+#: ../parser_interface.c:251 ../parser_interface.c:254
+#, c-format
+msgid "PANIC bad increment buffer %p pos %p ext %p size %d res %p\n"
+msgstr ""
+
+#: ../parser_interface.c:656 ../parser_interface.c:658
+#: ../parser_interface.c:446 ../parser_interface.c:476
+#, c-format
+msgid "profile %s network rules not enforced\n"
+msgstr ""
+
+#: ../parser_interface.c:666
+msgid "Unknown pattern type\n"
+msgstr ""
+
+#: ../parser_interface.c:750 ../parser_interface.c:902
+#: ../parser_interface.c:743 ../parser_interface.c:894
+#: ../parser_interface.c:518 ../parser_interface.c:669
+#, c-format
+msgid "Unable to open %s - %s\n"
+msgstr ""
+
+#: ../parser_interface.c:776 ../parser_interface.c:768
+#: ../parser_interface.c:543
+#, c-format
+msgid "Memory Allocation Error: Unable to remove ^%s\n"
+msgstr ""
+
+#: ../parser_interface.c:789 ../parser_interface.c:781
+#: ../parser_interface.c:556
+#, c-format
+msgid "Memory Allocation Error: Unable to remove %s:%s."
+msgstr ""
+
+#: ../parser_interface.c:810 ../parser_interface.c:802
+msgid "unable to create work area\n"
+msgstr ""
+
+#: ../parser_interface.c:818 ../parser_interface.c:810
+#, c-format
+msgid "unable to serialize profile %s\n"
+msgstr ""
+
+#: ../parser_interface.c:829 ../parser_interface.c:916
+#: ../parser_interface.c:821 ../parser_interface.c:908
+#: ../parser_interface.c:582
+#, c-format
+msgid "%s: Unable to write entire profile entry\n"
+msgstr ""
+
+#: ../parser_interface.c:839 ../parser_interface.c:831
+#: ../parser_interface.c:593 ../parser_interface.c:579
+#, c-format
+msgid "%s: Unable to write entire profile entry to cache\n"
+msgstr ""
+
+#: parser_lex.l:100 parser_lex.l:163 parser_lex.l:169
+#, c-format
+msgid "Could not open '%s'"
+msgstr ""
+
+#: parser_lex.l:104 parser_lex.l:167 parser_lex.l:173 parser_lex.l:174
+#, c-format
+msgid "fstat failed for '%s'"
+msgstr ""
+
+#: parser_lex.l:121
+#, c-format
+msgid "opendir failed '%s'"
+msgstr ""
+
+#: parser_lex.l:152
+#, c-format
+msgid "stat failed for '%s'"
+msgstr ""
+
+#: parser_lex.l:155 parser_lex.l:133 parser_lex.l:139
+#, c-format
+msgid "Could not open '%s' in '%s'"
+msgstr ""
+
+#: parser_lex.l:284 parser_lex.l:322 parser_lex.l:362 parser_lex.l:399
+#: parser_lex.l:469 parser_lex.l:655 parser_lex.l:586 parser_lex.l:638
+#, c-format
+msgid "Found unexpected character: '%s'"
+msgstr ""
+
+#: parser_lex.l:386 parser_lex.l:418 parser_lex.l:428 parser_lex.l:474
+msgid "Variable declarations do not accept trailing commas"
+msgstr ""
+
+#: parser_lex.l:420
+#, c-format
+msgid "(network_mode) Found unexpected character: '%s'"
+msgstr ""
+
+#: ../parser_main.c:333 ../parser_common.c:61 ../parser_common.c:106
+#, c-format
+msgid "Warning from %s (%s%sline %d): %s"
+msgstr ""
+
+#: ../parser_main.c:531
+#, c-format
+msgid "%s: Could not allocate memory for subdomainbase mount point\n"
+msgstr ""
+
+#: ../parser_main.c:577 ../parser_main.c:616 ../parser_main.c:479
+#: ../parser_main.c:1444
+#, c-format
+msgid ""
+"Warning: unable to find a suitable fs in %s, is it mounted?\n"
+"Use --subdomainfs to override.\n"
+msgstr ""
+
+#: ../parser_main.c:597 ../parser_main.c:635 ../parser_main.c:498
+#: ../parser_main.c:822
+#, c-format
+msgid ""
+"%s: Sorry. You need root privileges to run this program.\n"
+"\n"
+msgstr ""
+
+#: ../parser_main.c:604 ../parser_main.c:642 ../parser_main.c:505
+#: ../parser_main.c:828
+#, c-format
+msgid ""
+"%s: Warning! You've set this program setuid root.\n"
+"Anybody who can run this program can update your AppArmor profiles.\n"
+"\n"
+msgstr ""
+
+#: ../parser_main.c:704 ../parser_main.c:813 ../parser_main.c:836
+#: ../parser_main.c:946 ../parser_main.c:860 ../parser_main.c:1038
+#, c-format
+msgid "Error: Could not read profile %s: %s.\n"
+msgstr ""
+
+#: ../parser_main.c:718 ../parser_misc.c:270 parser_yacc.y:227
+#: parser_yacc.y:374 parser_yacc.y:386 parser_yacc.y:484 parser_yacc.y:586
+#: parser_yacc.y:624 parser_yacc.y:939 parser_yacc.y:948 parser_yacc.y:960
+#: parser_yacc.y:1008 parser_yacc.y:1019 parser_yacc.y:1101 parser_yacc.y:1119
+#: parser_yacc.y:1126 ../parser_main.c:850 ../parser_main.c:1015
+#: ../parser_main.c:1229 ../parser_main.c:1283 ../parser_misc.c:431
+#: parser_yacc.y:268 parser_yacc.y:416 parser_yacc.y:426 parser_yacc.y:537
+#: parser_yacc.y:626 parser_yacc.y:976 parser_yacc.y:1021 parser_yacc.y:1030
+#: parser_yacc.y:1042 parser_yacc.y:1078 parser_yacc.y:1082 parser_yacc.y:1092
+#: parser_yacc.y:1102 parser_yacc.y:1201 parser_yacc.y:1223 parser_yacc.y:1234
+#: parser_yacc.y:1309 parser_yacc.y:1327 parser_yacc.y:1334 parser_yacc.y:1385
+#: ../parser_main.c:735 ../parser_main.c:923 ../parser_main.c:1133
+#: ../parser_main.c:1187 parser_yacc.y:311 parser_yacc.y:462 parser_yacc.y:472
+#: parser_yacc.y:583 parser_yacc.y:662 parser_yacc.y:669 parser_yacc.y:1130
+#: parser_yacc.y:1166 parser_yacc.y:1170 parser_yacc.y:1180 parser_yacc.y:1190
+#: parser_yacc.y:1298 parser_yacc.y:1376 parser_yacc.y:1479 parser_yacc.y:1490
+#: parser_yacc.y:1565 parser_yacc.y:1583 parser_yacc.y:1590 parser_yacc.y:1639
+#: ../network.c:314 ../af_unix.cc:203 ../parser_misc.c:215 ../parser_misc.c:939
+#: parser_yacc.y:343 parser_yacc.y:367 parser_yacc.y:533 parser_yacc.y:543
+#: parser_yacc.y:660 parser_yacc.y:741 parser_yacc.y:750 parser_yacc.y:1171
+#: parser_yacc.y:1219 parser_yacc.y:1255 parser_yacc.y:1264 parser_yacc.y:1268
+#: parser_yacc.y:1278 parser_yacc.y:1288 parser_yacc.y:1382 parser_yacc.y:1460
+#: parser_yacc.y:1592 parser_yacc.y:1597 parser_yacc.y:1674 parser_yacc.y:1692
+#: parser_yacc.y:1699 parser_yacc.y:1748 ../network.c:315 ../af_unix.cc:194
+msgid "Memory allocation error."
+msgstr ""
+
+#: ../parser_main.c:740 ../parser_main.c:872 ../parser_main.c:757
+#: ../parser_main.c:975
+#, c-format
+msgid "Cached load succeeded for \"%s\".\n"
+msgstr ""
+
+#: ../parser_main.c:744 ../parser_main.c:876 ../parser_main.c:761
+#: ../parser_main.c:979
+#, c-format
+msgid "Cached reload succeeded for \"%s\".\n"
+msgstr ""
+
+#: ../parser_main.c:910 ../parser_main.c:1058 ../parser_main.c:967
+#: ../parser_main.c:1132
+#, c-format
+msgid "%s: Errors found in file. Aborting.\n"
+msgstr ""
+
+#: ../parser_misc.c:426 ../parser_misc.c:597 ../parser_misc.c:339
+#: ../parser_misc.c:532
+msgid ""
+"Uppercase qualifiers \"RWLIMX\" are deprecated, please convert to lowercase\n"
+"See the apparmor.d(5) manpage for details.\n"
+msgstr ""
+
+#: ../parser_misc.c:467 ../parser_misc.c:474 ../parser_misc.c:638
+#: ../parser_misc.c:645 ../parser_misc.c:380 ../parser_misc.c:387
+#: ../parser_misc.c:573 ../parser_misc.c:580
+msgid "Conflict 'a' and 'w' perms are mutually exclusive."
+msgstr ""
+
+#: ../parser_misc.c:491 ../parser_misc.c:662 ../parser_misc.c:404
+#: ../parser_misc.c:597
+msgid "Exec qualifier 'i' invalid, conflicting qualifier already specified"
+msgstr ""
+
+#: ../parser_misc.c:502 ../parser_misc.c:673 ../parser_misc.c:415
+#: ../parser_misc.c:608
+#, c-format
+msgid ""
+"Unconfined exec qualifier (%c%c) allows some dangerous environment variables "
+"to be passed to the unconfined process; 'man 5 apparmor.d' for details.\n"
+msgstr ""
+
+#: ../parser_misc.c:510 ../parser_misc.c:551 ../parser_misc.c:681
+#: ../parser_misc.c:722 ../parser_misc.c:423 ../parser_misc.c:464
+#: ../parser_misc.c:616 ../parser_misc.c:657
+#, c-format
+msgid "Exec qualifier '%c' invalid, conflicting qualifier already specified"
+msgstr ""
+
+#: ../parser_misc.c:537 ../parser_misc.c:545 ../parser_misc.c:708
+#: ../parser_misc.c:716 ../parser_misc.c:450 ../parser_misc.c:458
+#: ../parser_misc.c:643 ../parser_misc.c:651
+#, c-format
+msgid "Exec qualifier '%c%c' invalid, conflicting qualifier already specified"
+msgstr ""
+
+#: ../parser_misc.c:593 ../parser_misc.c:764 ../parser_misc.c:506
+#: ../parser_misc.c:699
+#, c-format
+msgid "Internal: unexpected mode character '%c' in input"
+msgstr ""
+
+#: ../parser_misc.c:615 ../parser_misc.c:786 ../parser_misc.c:528
+#: ../parser_misc.c:721
+#, c-format
+msgid "Internal error generated invalid perm 0x%llx\n"
+msgstr ""
+
+#: ../parser_misc.c:865 ../parser_symtab.c:561 ../parser_regex.c:626
+#: ../parser_variable.c:229
+#, c-format
+msgid "AppArmor parser error: %s\n"
+msgstr ""
+
+#: ../parser_merge.c:92 ../parser_merge.c:91 ../parser_merge.c:83
+#: ../parser_merge.c:71
+msgid "Couldn't merge entries. Out of Memory\n"
+msgstr ""
+
+#: ../parser_merge.c:111 ../parser_merge.c:113 ../parser_merge.c:105
+#: ../parser_merge.c:93
+#, c-format
+msgid "profile %s: has merged rule %s with conflicting x modifiers\n"
+msgstr ""
+
+#: parser_yacc.y:236 parser_yacc.y:277 parser_yacc.y:320
+msgid "Profile attachment must begin with a '/'."
+msgstr ""
+
+#: parser_yacc.y:260 parser_yacc.y:302 parser_yacc.y:348 parser_yacc.y:407
+msgid ""
+"Profile names must begin with a '/', namespace or keyword 'profile' or 'hat'."
+msgstr ""
+
+#: parser_yacc.y:296 parser_yacc.y:338 parser_yacc.y:384 parser_yacc.y:449
+#, c-format
+msgid "Failed to create alias %s -> %s\n"
+msgstr ""
+
+#: parser_yacc.y:417 parser_yacc.y:460 parser_yacc.y:506 parser_yacc.y:581
+msgid "Profile flag chroot_relative conflicts with namespace_relative"
+msgstr ""
+
+#: parser_yacc.y:421 parser_yacc.y:464 parser_yacc.y:510 parser_yacc.y:585
+msgid "Profile flag mediate_deleted conflicts with delegate_deleted"
+msgstr ""
+
+#: parser_yacc.y:424 parser_yacc.y:467 parser_yacc.y:513 parser_yacc.y:588
+msgid "Profile flag attach_disconnected conflicts with no_attach_disconnected"
+msgstr ""
+
+#: parser_yacc.y:427 parser_yacc.y:470 parser_yacc.y:516 parser_yacc.y:591
+msgid "Profile flag chroot_attach conflicts with chroot_no_attach"
+msgstr ""
+
+#: parser_yacc.y:441 parser_yacc.y:484 parser_yacc.y:530 parser_yacc.y:607
+msgid "Profile flag 'debug' is no longer valid."
+msgstr ""
+
+#: parser_yacc.y:463 parser_yacc.y:506 parser_yacc.y:552 parser_yacc.y:629
+#, c-format
+msgid "Invalid profile flag: %s."
+msgstr ""
+
+#: parser_yacc.y:498 parser_yacc.y:520 parser_yacc.y:548 parser_yacc.y:594
+#: parser_yacc.y:673
+msgid "Assert: `rule' returned NULL."
+msgstr ""
+
+#: parser_yacc.y:501 parser_yacc.y:546 parser_yacc.y:552 parser_yacc.y:584
+#: parser_yacc.y:598 parser_yacc.y:630 parser_yacc.y:677 parser_yacc.y:709
+msgid ""
+"Invalid mode, in deny rules 'x' must not be preceded by exec qualifier 'i', "
+"'p', or 'u'"
+msgstr ""
+
+#: parser_yacc.y:524 parser_yacc.y:556 parser_yacc.y:602 parser_yacc.y:681
+msgid ""
+"Invalid mode, 'x' must be preceded by exec qualifier 'i', 'p', 'c', or 'u'"
+msgstr ""
+
+#: parser_yacc.y:549 parser_yacc.y:587 parser_yacc.y:633 parser_yacc.y:712
+msgid "Invalid mode, 'x' must be preceded by exec qualifier 'i', 'p', or 'u'"
+msgstr ""
+
+#: parser_yacc.y:574 parser_yacc.y:612 parser_yacc.y:614 parser_yacc.y:660
+#: parser_yacc.y:739
+msgid "Assert: `network_rule' return invalid protocol."
+msgstr ""
+
+#: parser_yacc.y:649 parser_yacc.y:696 parser_yacc.y:786 parser_yacc.y:867
+msgid "Assert: `change_profile' returned NULL."
+msgstr ""
+
+#: parser_yacc.y:680 parser_yacc.y:720 parser_yacc.y:810 parser_yacc.y:905
+msgid "Assert: 'hat rule' returned NULL."
+msgstr ""
+
+#: parser_yacc.y:689 parser_yacc.y:729 parser_yacc.y:819 parser_yacc.y:914
+msgid "Assert: 'local_profile rule' returned NULL."
+msgstr ""
+
+#: parser_yacc.y:824 parser_yacc.y:885 parser_yacc.y:992 parser_yacc.y:1077
+#, c-format
+msgid "Unset boolean variable %s used in if-expression"
+msgstr ""
+
+#: parser_yacc.y:882 parser_yacc.y:986 parser_yacc.y:1092 parser_yacc.y:1181
+msgid "unsafe rule missing exec permissions"
+msgstr ""
+
+#: parser_yacc.y:901 parser_yacc.y:954 parser_yacc.y:1060 parser_yacc.y:1148
+msgid "subset can only be used with link rules."
+msgstr ""
+
+#: parser_yacc.y:903 parser_yacc.y:956 parser_yacc.y:1062 parser_yacc.y:1150
+msgid "link and exec perms conflict on a file rule using ->"
+msgstr ""
+
+#: parser_yacc.y:905 parser_yacc.y:958 parser_yacc.y:1064 parser_yacc.y:1152
+msgid "link perms are not allowed on a named profile transition.\n"
+msgstr ""
+
+#: parser_yacc.y:921 parser_yacc.y:1003 parser_yacc.y:1109 parser_yacc.y:1198
+#, c-format
+msgid "missing an end of line character? (entry: %s)"
+msgstr ""
+
+#: parser_yacc.y:975 parser_yacc.y:985 parser_yacc.y:1057 parser_yacc.y:1067
+#: parser_yacc.y:1145 parser_yacc.y:1155 parser_yacc.y:1234 parser_yacc.y:1244
+msgid "Invalid network entry."
+msgstr ""
+
+#: parser_yacc.y:1039 parser_yacc.y:1048 parser_yacc.y:1254 parser_yacc.y:1510
+#: parser_yacc.y:1617
+#, c-format
+msgid "Invalid capability %s."
+msgstr ""
+
+#: parser_yacc.y:1066 parser_yacc.y:1269 parser_yacc.y:1525 parser_yacc.y:1637
+#, c-format
+msgid "AppArmor parser error for %s%s%s at line %d: %s\n"
+msgstr ""
+
+#: parser_yacc.y:1072 parser_yacc.y:1275 parser_yacc.y:1531
+#, c-format
+msgid "AppArmor parser error,%s%s line %d: %s\n"
+msgstr ""
+
+#: ../parser_regex.c:244
+#, c-format
+msgid "%s: Illegal open {, nesting groupings not allowed\n"
+msgstr ""
+
+#: ../parser_regex.c:265 ../parser_regex.c:274 ../parser_regex.c:278
+#: ../parser_regex.c:306
+#, c-format
+msgid "%s: Regex grouping error: Invalid number of items between {}\n"
+msgstr ""
+
+#: ../parser_regex.c:271 ../parser_regex.c:280 ../parser_regex.c:284
+#: ../parser_regex.c:312
+#, c-format
+msgid ""
+"%s: Regex grouping error: Invalid close }, no matching open { detected\n"
+msgstr ""
+
+#: ../parser_regex.c:337 ../parser_regex.c:343 ../parser_regex.c:361
+#: ../parser_regex.c:403
+#, c-format
+msgid ""
+"%s: Regex grouping error: Unclosed grouping or character class, expecting "
+"close }\n"
+msgstr ""
+
+#: ../parser_regex.c:351 ../parser_regex.c:357
+#, c-format
+msgid "%s: Internal buffer overflow detected, %d characters exceeded\n"
+msgstr ""
+
+#: ../parser_regex.c:355 ../parser_regex.c:361 ../parser_regex.c:377
+#: ../parser_regex.c:419
+#, c-format
+msgid "%s: Unable to parse input line '%s'\n"
+msgstr ""
+
+#: ../parser_regex.c:397 ../parser_regex.c:405 ../parser_regex.c:421
+#: ../parser_regex.c:487
+#, c-format
+msgid "%s: Invalid profile name '%s' - bad regular expression\n"
+msgstr ""
+
+#: ../parser_policy.c:202 ../parser_policy.c:402 ../parser_policy.c:375
+#: ../parser_policy.c:383
+#, c-format
+msgid "ERROR merging rules for profile %s, failed to load\n"
+msgstr ""
+
+#: ../parser_policy.c:234
+#, c-format
+msgid ""
+"ERROR profile %s contains policy elements not usable with this kernel:\n"
+"\t'*', '?', character ranges, and alternations are not allowed.\n"
+"\t'**' may only be used at the end of a rule.\n"
+msgstr ""
+
+#: ../parser_policy.c:279 ../parser_policy.c:359 ../parser_policy.c:332
+#: ../parser_policy.c:340
+#, c-format
+msgid "ERROR processing regexs for profile %s, failed to load\n"
+msgstr ""
+
+#: ../parser_policy.c:306 ../parser_policy.c:389 ../parser_policy.c:362
+#: ../parser_policy.c:370
+#, c-format
+msgid "ERROR expanding variables for profile %s, failed to load\n"
+msgstr ""
+
+#: ../parser_policy.c:390 ../parser_policy.c:382 ../parser_policy.c:355
+#: ../parser_policy.c:363
+#, c-format
+msgid "ERROR adding hat access rule for profile %s\n"
+msgstr ""
+
+#: ../parser_policy.c:490 ../parser_policy.c:271
+#, c-format
+msgid "ERROR in profile %s, failed to load\n"
+msgstr ""
+
+#: ../parser_policy.c:675
+#, c-format
+msgid "%s: Errors found during postprocessing.  Aborting.\n"
+msgstr ""
+
+#: ../parser_policy.c:682 ../parser_policy.c:704
+#, c-format
+msgid "%s: Errors found during regex postprocess.  Aborting.\n"
+msgstr ""
+
+#: ../parser_policy.c:689
+#, c-format
+msgid "%s: Errors found during postprocess.  Aborting.\n"
+msgstr ""
+
+#: ../parser_policy.c:696
+#, c-format
+msgid "%s: Errors found in combining rules postprocessing. Aborting.\n"
+msgstr ""
+
+#: parser_lex.l:180 parser_lex.l:186 parser_lex.l:187
+#, c-format
+msgid "Could not process include directory '%s' in '%s'"
+msgstr ""
+
+#: ../parser_main.c:660 ../parser_main.c:523
+msgid "Feature buffer full."
+msgstr ""
+
+#: ../parser_main.c:1115 ../parser_main.c:1132 ../parser_main.c:1024
+#: ../parser_main.c:1041 ../parser_main.c:1332 ../parser_main.c:1354
+#: ../parser_misc.c:280 ../parser_misc.c:299 ../parser_misc.c:308
+msgid "Out of memory"
+msgstr ""
+
+#: ../parser_main.c:1182 ../parser_main.c:1091
+#, c-format
+msgid "Can't create cache directory: %s\n"
+msgstr ""
+
+#: ../parser_main.c:1185 ../parser_main.c:1094
+#, c-format
+msgid "File in cache directory location: %s\n"
+msgstr ""
+
+#: ../parser_main.c:1188 ../parser_main.c:1097
+#, c-format
+msgid "Can't update cache directory: %s\n"
+msgstr ""
+
+#: ../parser_misc.c:833
+#, c-format
+msgid "Internal: unexpected DBus mode character '%c' in input"
+msgstr ""
+
+#: ../parser_misc.c:857
+#, c-format
+msgid "Internal error generated invalid DBus perm 0x%x\n"
+msgstr ""
+
+#: parser_yacc.y:575 parser_yacc.y:621 parser_yacc.y:700
+msgid "deny prefix not allowed"
+msgstr ""
+
+#: parser_yacc.y:612 parser_yacc.y:658 parser_yacc.y:737
+msgid "owner prefix not allowed"
+msgstr ""
+
+#: parser_yacc.y:660
+msgid "owner prefix not allow on mount rules"
+msgstr ""
+
+#: parser_yacc.y:677
+msgid "owner prefix not allow on dbus rules"
+msgstr ""
+
+#: parser_yacc.y:704
+msgid "owner prefix not allow on capability rules"
+msgstr ""
+
+#: parser_yacc.y:1357 parser_yacc.y:1613 parser_yacc.y:1722
+#, c-format
+msgid "invalid mount conditional %s%s"
+msgstr ""
+
+#: parser_yacc.y:1374 parser_yacc.y:1628 parser_yacc.y:1737
+msgid "bad mount rule"
+msgstr ""
+
+#: parser_yacc.y:1381 parser_yacc.y:1635 parser_yacc.y:1744
+msgid "mount point conditions not currently supported"
+msgstr ""
+
+#: parser_yacc.y:1398 parser_yacc.y:1650 parser_yacc.y:1759
+#, c-format
+msgid "invalid pivotroot conditional '%s'"
+msgstr ""
+
+#: ../parser_regex.c:241 ../parser_regex.c:236 ../parser_regex.c:264
+#, c-format
+msgid ""
+"%s: Regex grouping error: Invalid close ], no matching open [ detected\n"
+msgstr ""
+
+#: ../parser_regex.c:257 ../parser_regex.c:256 ../parser_regex.c:284
+#, c-format
+msgid "%s: Regex grouping error: Exceeded maximum nesting of {}\n"
+msgstr ""
+
+#: ../parser_policy.c:366 ../parser_policy.c:339 ../parser_policy.c:347
+#, c-format
+msgid "ERROR processing policydb rules for profile %s, failed to load\n"
+msgstr ""
+
+#: ../parser_policy.c:396 ../parser_policy.c:369 ../parser_policy.c:377
+#, c-format
+msgid "ERROR replacing aliases for profile %s, failed to load\n"
+msgstr ""
+
+#: ../parser_interface.c:635 ../parser_interface.c:638
+#, c-format
+msgid "%s: Unable to write %s\n"
+msgstr ""
+
+#: ../parser_main.c:721
+#, c-format
+msgid "Error: Could not read binary profile or cache file %s: %s.\n"
+msgstr ""
+
+#: ../parser_main.c:811
+#, c-format
+msgid "Error: Could not read cache file '%s', skipping...\n"
+msgstr ""
+
+#: ../parser_misc.c:575 ../parser_misc.c:768
+#, c-format
+msgid "Internal: unexpected %s mode character '%c' in input"
+msgstr ""
+
+#: ../parser_misc.c:599 ../parser_misc.c:792
+#, c-format
+msgid "Internal error generated invalid %s perm 0x%x\n"
+msgstr ""
+
+#: parser_yacc.y:703 parser_yacc.y:784
+msgid "owner prefix not allowed on mount rules"
+msgstr ""
+
+#: parser_yacc.y:720 parser_yacc.y:801
+msgid "owner prefix not allowed on dbus rules"
+msgstr ""
+
+#: parser_yacc.y:736 parser_yacc.y:817
+msgid "owner prefix not allowed on signal rules"
+msgstr ""
+
+#: parser_yacc.y:752 parser_yacc.y:833
+msgid "owner prefix not allowed on ptrace rules"
+msgstr ""
+
+#: parser_yacc.y:768 parser_yacc.y:849 parser_yacc.y:869
+msgid "owner prefix not allowed on unix rules"
+msgstr ""
+
+#: parser_yacc.y:794 parser_yacc.y:885
+msgid "owner prefix not allowed on capability rules"
+msgstr ""
+
+#: parser_yacc.y:1293 parser_yacc.y:1377
+#, c-format
+msgid "dbus rule: invalid conditional group %s=()"
+msgstr ""
+
+#: parser_yacc.y:1371 parser_yacc.y:1455
+#, c-format
+msgid "unix rule: invalid conditional group %s=()"
+msgstr ""
+
+#: ../parser_regex.c:368 ../parser_regex.c:410
+#, c-format
+msgid "%s: Regex error: trailing '\\' escape character\n"
+msgstr ""
+
+#: ../parser_common.c:112
+#, c-format
+msgid "%s from %s (%s%sline %d): %s"
+msgstr ""
+
+#: ../parser_common.c:113
+msgid "Warning converted to Error"
+msgstr ""
+
+#: ../parser_common.c:113
+msgid "Warning"
+msgstr ""
+
+#: ../parser_interface.c:524
+#, c-format
+msgid "Unable to open stdout - %s\n"
+msgstr ""
+
+#: ../parser_interface.c:533
+#, c-format
+msgid "Unable to open output file - %s\n"
+msgstr ""
+
+#: parser_lex.l:326
+msgid "Failed to process filename\n"
+msgstr ""
+
+#: parser_lex.l:720
+#, c-format
+msgid "Lexer found unexpected character: '%s' (0x%x) in state: %s"
+msgstr ""
+
+#: ../parser_main.c:915
+#, c-format
+msgid "Unable to print the cache directory: %m\n"
+msgstr ""
+
+#: ../parser_main.c:951
+#, c-format
+msgid "Error: Could not load profile %s: %s\n"
+msgstr ""
+
+#: ../parser_main.c:961
+#, c-format
+msgid "Error: Could not replace profile %s: %s\n"
+msgstr ""
+
+#: ../parser_main.c:966
+#, c-format
+msgid "Error: Invalid load option specified: %d\n"
+msgstr ""
+
+#: ../parser_main.c:1077
+#, c-format
+msgid "Could not get cachename for '%s'\n"
+msgstr ""
+
+#: ../parser_main.c:1434
+msgid "Kernel features abi not found"
+msgstr ""
+
+#: ../parser_main.c:1438
+msgid "Failed to add kernel capabilities to known capabilities set"
+msgstr ""
+
+#: ../parser_main.c:1465
+#, c-format
+msgid "Failed to clear cache files (%s): %s\n"
+msgstr ""
+
+#: ../parser_main.c:1474
+msgid ""
+"The --create-cache-dir option is deprecated. Please use --write-cache.\n"
+msgstr ""
+
+#: ../parser_main.c:1479
+#, c-format
+msgid "Failed setting up policy cache (%s): %s\n"
+msgstr ""
+
+#: ../parser_misc.c:904
+#, c-format
+msgid "Namespace not terminated: %s\n"
+msgstr ""
+
+#: ../parser_misc.c:906
+#, c-format
+msgid "Empty namespace: %s\n"
+msgstr ""
+
+#: ../parser_misc.c:908
+#, c-format
+msgid "Empty named transition profile name: %s\n"
+msgstr ""
+
+#: ../parser_misc.c:910
+#, c-format
+msgid "Unknown error while parsing label: %s\n"
+msgstr ""
+
+#: parser_yacc.y:306
+msgid "Failed to setup default policy feature abi"
+msgstr ""
+
+#: parser_yacc.y:308
+#, c-format
+msgid ""
+"%s: File '%s' missing feature abi, falling back to default policy feature "
+"abi\n"
+msgstr ""
+
+#: parser_yacc.y:313
+msgid "Failed to add policy capabilities to known capabilities set"
+msgstr ""
+
+#: parser_yacc.y:350
+msgid "Profile names must begin with a '/' or a namespace"
+msgstr ""
+
+#: parser_yacc.y:372
+msgid "Profile attachment must begin with a '/' or variable."
+msgstr ""
+
+#: parser_yacc.y:375
+#, c-format
+msgid "profile id: invalid conditional group %s=()"
+msgstr ""
+
+#: parser_yacc.y:404
+msgid ""
+"The use of file paths as profile names is deprecated. See man apparmor.d for "
+"more information\n"
+msgstr ""
+
+#: parser_yacc.y:573
+#, c-format
+msgid "Profile flag '%s' conflicts with '%s'"
+msgstr ""
+
+#: parser_yacc.y:954
+msgid "RLIMIT 'cpu' no units specified using default units of seconds\n"
+msgstr ""
+
+#: parser_yacc.y:966
+msgid ""
+"RLIMIT 'rttime' no units specified using default units of microseconds\n"
+msgstr ""
+
+#: parser_yacc.y:1582
+msgid "Exec condition is required when unsafe or safe keywords are present"
+msgstr ""
+
+#: parser_yacc.y:1584
+msgid "Exec condition must begin with '/'."
+msgstr ""
+
+#: parser_yacc.y:1643
+#, c-format
+msgid "AppArmor parser error at line %d: %s\n"
+msgstr ""
+
+#: parser_yacc.y:1790
+#, c-format
+msgid "Could not open '%s': %m"
+msgstr ""
+
+#: parser_yacc.y:1795
+#, c-format
+msgid "fstat failed for '%s': %m"
+msgstr ""
+
+#: parser_yacc.y:1809
+#, c-format
+msgid "failed to find features abi '%s': %m"
+msgstr ""
+
+#: parser_yacc.y:1813
+#, c-format
+msgid ""
+"%s: %s features abi '%s' differs from policy declared feature abi, using the "
+"features abi declared in policy\n"
+msgstr ""
+
+#: ../parser_regex.c:98 ../parser_regex.c:238
+#, c-format
+msgid "%s: Invalid glob type %d\n"
+msgstr ""
+
+#: ../parser_regex.c:693
+#, c-format
+msgid "The current kernel does not support stacking of named transitions: %s\n"
+msgstr ""

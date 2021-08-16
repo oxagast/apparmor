@@ -1,0 +1,7 @@
+#
+#=DESCRIPTION simple max virtual memory size rlimit test
+#=EXRESULT PASS
+
+profile rlimit {
+  set rlimit as <= 2047MB,
+}

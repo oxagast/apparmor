@@ -1,0 +1,7 @@
+#
+#=Description xattrs key followed by key value
+#=EXRESULT PASS
+#
+/usr/bin/xattrs-test xattrs=(myvalue user.foo=bar) {
+  /foo r,
+}

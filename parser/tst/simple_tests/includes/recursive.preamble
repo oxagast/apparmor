@@ -1,0 +1,4 @@
+
+# helper for include_tests/recursive_3.sd
+
+#include <includes/recursive.preamble>

@@ -1,0 +1,71 @@
+# Swahili translation for apparmor
+# Copyright (c) 2019 Rosetta Contributors and Canonical Ltd 2019
+# This file is distributed under the same license as the apparmor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: apparmor\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-11-28 10:23-0800\n"
+"PO-Revision-Date: 2019-11-14 12:33+0000\n"
+"Last-Translator: Swahilinux Administration <admin@swahilinux.org>\n"
+"Language-Team: Swahili <sw@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2019-11-15 04:30+0000\n"
+"X-Generator: Launchpad (build c597c3229eb023b1e626162d5947141bf7befb13)\n"
+
+#: ../aa_enabled.c:26
+#, c-format
+msgid ""
+"%s: [options]\n"
+"  options:\n"
+"  -q | --quiet        Don't print out any messages\n"
+"  -h | --help         Print help\n"
+msgstr ""
+"%s: [chaguzi]\n"
+"  chaguzi:\n"
+"  -q | --quiet Usichapishe jumbe yoyote\n"
+"  -h | --help Chapisha msaada\n"
+
+#: ../aa_enabled.c:45
+#, c-format
+msgid "unknown or incompatible options\n"
+msgstr "chaguo lisilojulikana au lisilofaa\n"
+
+#: ../aa_enabled.c:55
+#, c-format
+msgid "unknown option '%s'\n"
+msgstr "chaguo lisilojulikana '%s'\n"
+
+#: ../aa_enabled.c:64
+#, c-format
+msgid "Yes\n"
+msgstr "Ndio\n"
+
+#: ../aa_enabled.c:71
+#, c-format
+msgid "No - not available on this system.\n"
+msgstr "La - haipo kwenye mfumo huu.\n"
+
+#: ../aa_enabled.c:74
+#, c-format
+msgid "No - disabled at boot.\n"
+msgstr "La - ilizimwa kwenye washi.\n"
+
+#: ../aa_enabled.c:77
+#, c-format
+msgid "Maybe - policy interface not available.\n"
+msgstr "Labda - kiolesura cha faragha hakipo.\n"
+
+#: ../aa_enabled.c:81
+#, c-format
+msgid "Maybe - insufficient permissions to determine availability.\n"
+msgstr "Labda - hamna ruhusa ya kutosha ili kuamua kama ipo.\n"
+
+#: ../aa_enabled.c:84
+#, c-format
+msgid "Error - '%s'\n"
+msgstr "Dosari - '%s'\n"

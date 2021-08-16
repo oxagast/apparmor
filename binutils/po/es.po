@@ -1,0 +1,71 @@
+# Spanish translation for apparmor
+# Copyright (c) 2019 Rosetta Contributors and Canonical Ltd 2019
+# This file is distributed under the same license as the apparmor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: apparmor\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-11-28 10:23-0800\n"
+"PO-Revision-Date: 2019-06-09 14:01+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2019-06-10 04:32+0000\n"
+"X-Generator: Launchpad (build 18978)\n"
+
+#: ../aa_enabled.c:26
+#, c-format
+msgid ""
+"%s: [options]\n"
+"  options:\n"
+"  -q | --quiet        Don't print out any messages\n"
+"  -h | --help         Print help\n"
+msgstr ""
+"%s: [opciones]\n"
+"  opciones:\n"
+"  -q | --quiet        No emitir ningún mensaje\n"
+"  -h | --help         Mostrar la ayuda\n"
+
+#: ../aa_enabled.c:45
+#, c-format
+msgid "unknown or incompatible options\n"
+msgstr "opciones desconocidas o incompatibles\n"
+
+#: ../aa_enabled.c:55
+#, c-format
+msgid "unknown option '%s'\n"
+msgstr "se desconoce la opción «%s»\n"
+
+#: ../aa_enabled.c:64
+#, c-format
+msgid "Yes\n"
+msgstr "Sí\n"
+
+#: ../aa_enabled.c:71
+#, c-format
+msgid "No - not available on this system.\n"
+msgstr "No; no disponible en este sistema.\n"
+
+#: ../aa_enabled.c:74
+#, c-format
+msgid "No - disabled at boot.\n"
+msgstr "No; desactivado durante el arranque.\n"
+
+#: ../aa_enabled.c:77
+#, c-format
+msgid "Maybe - policy interface not available.\n"
+msgstr "Quizá; interfaz de directiva no disponible.\n"
+
+#: ../aa_enabled.c:81
+#, c-format
+msgid "Maybe - insufficient permissions to determine availability.\n"
+msgstr "Quizá; permisos insuficientes para determinar disponibilidad.\n"
+
+#: ../aa_enabled.c:84
+#, c-format
+msgid "Error - '%s'\n"
+msgstr "Error: «%s»\n"

@@ -1,0 +1,8 @@
+#=DESCRIPTION old includes - keyword include if exists of non-existent file in preamble
+#=EXRESULT PASS
+
+include if exists <includes-preamble/does-not-exist>
+
+/bin/foo {
+  /usr/some/other/thing r,
+}

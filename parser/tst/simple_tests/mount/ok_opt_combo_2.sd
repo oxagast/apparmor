@@ -1,0 +1,7 @@
+#
+#=Description basic mount rule with both fstypes and options
+#=EXRESULT PASS
+#
+/usr/bin/foo {
+  mount options in (ro,noexec) fstype={procfs,sysfs} /dev -> /foo,
+}

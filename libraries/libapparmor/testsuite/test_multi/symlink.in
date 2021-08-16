@@ -1,0 +1,1 @@
+Aug  3 00:00:41 liuchao-virtual-machine kernel: [ 4362.615262] audit: type=1400 audit(1596384041.705:290): apparmor="DENIED" operation="symlink" profile="/home/test.sh" name="/home/b.c" pid=8016 comm="ln" requested_mask="c" denied_mask="c" fsuid=0 ouid=0

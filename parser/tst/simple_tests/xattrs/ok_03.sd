@@ -1,0 +1,7 @@
+#
+#=Description match any value of an xattr
+#=EXRESULT PASS
+#
+/usr/bin/xattrs-test xattrs=(myvalue="*") {
+  /foo r,
+}

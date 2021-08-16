@@ -1,0 +1,7 @@
+#
+#=Description profile with xattrs then flags
+#=EXRESULT PASS
+#
+/usr/bin/xattrs-test xattrs=(myvalue=foo) flags=(complain) {
+  /foo r,
+}

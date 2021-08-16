@@ -1,0 +1,10 @@
+#
+#=DESCRIPTION includes testing - recursive include should not fail
+#=EXRESULT PASS
+#
+
+#include <includes/recursive.preamble>
+
+/does/not/exist {
+  /foo r,
+}

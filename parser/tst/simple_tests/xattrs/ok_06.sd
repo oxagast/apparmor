@@ -1,0 +1,7 @@
+#
+#=Description xattrs then flags
+#=EXRESULT PASS
+#
+/usr/bin/xattrs-test xattrs=(myvalue=foo) flags=(audit, mediate_deleted) {
+  /foo r,
+}

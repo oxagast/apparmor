@@ -1,0 +1,15 @@
+START
+File: symlink.in
+Event type: AA_RECORD_DENIED
+Audit ID: 1596384041.705:290
+Operation: symlink
+Mask: c
+Denied Mask: c
+fsuid: 0
+ouid: 0
+Profile: /home/test.sh
+Name: /home/b.c
+Command: ln
+PID: 8016
+Epoch: 1596384041
+Audit subid: 290

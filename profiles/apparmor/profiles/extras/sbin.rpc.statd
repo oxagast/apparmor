@@ -1,0 +1,52 @@
+# ------------------------------------------------------------------
+#
+#    Copyright (C) 2002-2005 Novell/SUSE
+#
+#    This program is free software; you can redistribute it and/or
+#    modify it under the terms of version 2 of the GNU General Public
+#    License published by the Free Software Foundation.
+#
+# ------------------------------------------------------------------
+
+abi <abi/3.0>,
+
+include <tunables/global>
+
+profile rpc.statd /{usr/,}sbin/rpc.statd {
+  include <abstractions/base>
+  include <abstractions/nameservice>
+
+  # needed to sanely drop privileges
+  capability setgid,
+  capability setuid,
+
+  # changes ownership of pidfile
+  capability chown,
+
+  # needed to drop capabilities
+  capability setpcap,
+
+  owner @{PROC}/@{pid}/fd/         r,
+  @{PROC}/fs/lockd/nlm_end_grace   w,
+  @{PROC}/sys/fs/nfs/**            r,
+  @{PROC}/sys/fs/nfs/nsm_local_state w,
+
+  /etc/netconfig                   r,
+  /etc/rpc                         r,
+  /{usr/,}sbin/rpc.statd           mrix,
+  /{usr/,}sbin/sm-notify           mrix,
+  /var/lib/nfs/sm/                 r,
+  /var/lib/nfs/sm/*                rw,
+  /var/lib/nfs/sm.bak/             r,
+  /var/lib/nfs/statd/              rw,
+  /var/lib/nfs/statd/sm/           r,
+  /var/lib/nfs/statd/sm/*          rwl,
+  /var/lib/nfs/statd/state         rw,
+  /var/lib/nfs/statd/sm.bak/       r,
+  /var/lib/nfs/statd/sm.bak/*      rwl,
+  /var/lib/nfs/state               rwk,
+  /var/lib/nfs/state.new           rwl,
+  /{,var/}run/rpc.statd.pid        w,
+  /{,var/}run/rpcbind.sock         rw,
+  /{,var/}run/sm-notify.pid        w,
+}

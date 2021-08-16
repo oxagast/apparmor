@@ -1,0 +1,1 @@
+type=AVC msg=audit(1553903266.854:518): apparmor="DENIED" operation="open" profile="/usr{,{/lib,/lib32,/lib64}/wine}/bin/wine{,-preloader,server}{,-staging-*,-vanilla-*}" name="/sys/class/scsi_device/" pid=543 comm="wine" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0

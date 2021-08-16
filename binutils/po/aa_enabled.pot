@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Canonical Ltd
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: apparmor@lists.ubuntu.com\n"
+"POT-Creation-Date: 2020-10-14 03:52-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../aa_enabled.c:21
+#, c-format
+msgid ""
+"%s: [options]\n"
+"  options:\n"
+"  -x | --exclusive    Shared interfaces must be available\n"
+"  -q | --quiet        Don't print out any messages\n"
+"  -h | --help         Print help\n"
+msgstr ""
+
+#: ../aa_enabled.c:37
+#, c-format
+msgid "No - not available on this system.\n"
+msgstr ""
+
+#: ../aa_enabled.c:41
+#, c-format
+msgid "No - disabled at boot.\n"
+msgstr ""
+
+#: ../aa_enabled.c:45
+#, c-format
+msgid "Maybe - policy interface not available.\n"
+msgstr ""
+
+#: ../aa_enabled.c:50
+#, c-format
+msgid "Maybe - insufficient permissions to determine availability.\n"
+msgstr ""
+
+#: ../aa_enabled.c:54
+#, c-format
+msgid "Partially - public shared interfaces are not available.\n"
+msgstr ""
+
+#: ../aa_enabled.c:58
+#, c-format
+msgid "Error - %s\n"
+msgstr ""
+
+#: ../aa_enabled.c:73
+#, c-format
+msgid "unknown or incompatible options\n"
+msgstr ""
+
+#: ../aa_enabled.c:87
+#, c-format
+msgid "unknown option '%s'\n"
+msgstr ""
+
+#: ../aa_enabled.c:98
+#, c-format
+msgid "Yes\n"
+msgstr ""

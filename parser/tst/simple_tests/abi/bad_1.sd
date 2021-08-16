@@ -1,0 +1,8 @@
+#
+#=DESCRIPTION abi testing - abi relative path in quotes
+#=EXRESULT FAIL
+
+abi "simple_tests/includes/abi/4.19,
+
+/does/not/exist {
+}

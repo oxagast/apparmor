@@ -1,0 +1,10 @@
+#
+#=DESCRIPTION link access test with audit deny and owner restriction
+#=EXRESULT PASS
+#
+
+profile test {
+  audit deny owner link subset /alpha/beta -> /tmp/**,
+  /tmp/** r,
+}
+

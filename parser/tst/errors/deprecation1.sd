@@ -1,0 +1,6 @@
+# We are deprecating path based profile names in AppArmor 3.0   1
+# This should generate a deprecation warning                    2
+                                                              # 3
+/bin/foo {                                                    # 4
+  include <includes/base>                                     # 5
+}                                                             # 6

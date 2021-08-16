@@ -1,0 +1,72 @@
+# Swedish translation for apparmor
+# Copyright (c) 2018 Rosetta Contributors and Canonical Ltd 2018
+# This file is distributed under the same license as the apparmor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: apparmor\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-11-28 10:23-0800\n"
+"PO-Revision-Date: 2018-09-08 03:51+0000\n"
+"Last-Translator: Jonatan Nyberg <Unknown>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2019-04-18 05:33+0000\n"
+"X-Generator: Launchpad (build 18928)\n"
+
+#: ../aa_enabled.c:26
+#, c-format
+msgid ""
+"%s: [options]\n"
+"  options:\n"
+"  -q | --quiet        Don't print out any messages\n"
+"  -h | --help         Print help\n"
+msgstr ""
+"%s: [options]\n"
+"  flaggor:\n"
+"  -q | --quiet        Skriv inte ut några meddelanden\n"
+"  -h | --help         Skriv ut hjälp\n"
+
+#: ../aa_enabled.c:45
+#, c-format
+msgid "unknown or incompatible options\n"
+msgstr "okända eller inkompatibla flaggor\n"
+
+#: ../aa_enabled.c:55
+#, c-format
+msgid "unknown option '%s'\n"
+msgstr "okänd flagga '%s'\n"
+
+#: ../aa_enabled.c:64
+#, c-format
+msgid "Yes\n"
+msgstr "Ja\n"
+
+#: ../aa_enabled.c:71
+#, c-format
+msgid "No - not available on this system.\n"
+msgstr "Nej - inte tillgänglig på detta system.\n"
+
+#: ../aa_enabled.c:74
+#, c-format
+msgid "No - disabled at boot.\n"
+msgstr "Nej - inaktiverad vid uppstart.\n"
+
+#: ../aa_enabled.c:77
+#, c-format
+msgid "Maybe - policy interface not available.\n"
+msgstr "Kanske - policy gränssnitt inte tillgängliga.\n"
+
+#: ../aa_enabled.c:81
+#, c-format
+msgid "Maybe - insufficient permissions to determine availability.\n"
+msgstr ""
+"Kanske - otillräckliga behörigheter för att bestämma tillgängligheten.\n"
+
+#: ../aa_enabled.c:84
+#, c-format
+msgid "Error - '%s'\n"
+msgstr "Fel - '%s'\n"

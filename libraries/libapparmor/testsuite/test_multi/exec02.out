@@ -1,0 +1,15 @@
+START
+File: exec02.in
+Event type: AA_RECORD_DENIED
+Audit ID: 1564250674.378:1307
+Operation: exec
+Mask: x
+Denied Mask: x
+fsuid: 1000
+ouid: 0
+Profile: /usr/bin/wireshark
+Name: /usr/lib64/wireshark/extcap/androiddump
+Command: pool
+PID: 23247
+Epoch: 1564250674
+Audit subid: 1307

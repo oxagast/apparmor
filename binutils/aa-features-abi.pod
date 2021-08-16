@@ -1,0 +1,97 @@
+# This publication is intellectual property of Canonical Ltd. Its contents
+# can be duplicated, either in part or in whole, provided that a copyright
+# label is visibly located on each copy.
+#
+# All information found in this book has been compiled with utmost
+# attention to detail. However, this does not guarantee complete accuracy.
+# Neither Canonical Ltd, the authors, nor the translators shall be held
+# liable for possible errors or the consequences thereof.
+#
+# Many of the software and hardware descriptions cited in this book
+# are registered trademarks. All trade names are subject to copyright
+# restrictions and may be registered trade marks. Canonical Ltd
+# essentially adheres to the manufacturer's spelling.
+#
+# Names of products and trademarks appearing in this book (with or without
+# specific notation) are likewise subject to trademark and trade protection
+# laws and may thus fall under copyright restrictions.
+#
+
+
+=pod
+
+=head1 NAME
+
+aa-features-abi - Extract, validate and manipulate AppArmor feature abis
+
+=head1 SYNOPSIS
+
+B<aa-features-abi> [OPTIONS] <SOURCE> [OUTPUT OPTIONS]
+
+=head1 DESCRIPTION
+
+B<aa-features-abi> is used to extract a features abi and output to
+either stdout or a specified file. A SOURCE_OPTION must be specified.
+If an output option is not specified the features abi is written to
+stdout.
+
+=head1 OPTIONS
+
+B<aa-features-abi> accepts the following arguments:
+
+=over 4
+
+=item -h, --help
+
+Display a brief usage guide.
+
+=item -d, --debug
+
+show messages with debugging information
+
+=item -v, --verbose
+
+show messages with stats
+
+=back
+
+=head1 SOURCE
+
+=over 4
+
+=item -x, --extract
+
+Extract the features abi for the kernel
+
+=item -f FILE, --file=FILE
+
+Load the features abi from FILE and send it to OUTPUT OPTIONS.
+
+=back
+
+=head1 OUTPUT OPTIONS
+
+=over 4
+
+=item --stdout
+
+Write the features abi to I<stdout>, this is the default if no output option
+is specified.
+
+=item -w FILE, --write FILE
+
+Write the features abi to I<FILE>.
+
+=back
+
+
+=head1 BUGS
+
+If you find any bugs, please report them at
+L<https://gitlab.com/apparmor/apparmor/-/issues>.
+
+=head1 SEE ALSO
+
+apparmor(7), apparmor.d(5), aa_features(3), and L<https://wiki.apparmor.net>.
+
+=cut
